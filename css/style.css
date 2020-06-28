@@ -1,0 +1,312 @@
+@charset "UTF-8" ;
+
+/*　共通部分
+------------------------------------------*/
+html {
+    font-size: 100% ;
+   
+}
+body {
+       font-family: "Yu Gothic Medium", "游ゴシック体 Medium", "YUGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "sans-serif;
+       line-height: 1.7;
+       color: #432;
+ 
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+
+}
+/* HEADER
+-----------------------------------------*/
+.logo {
+    width: 210px;
+    margin-top: 14px;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    font-family: 'Noto Serif JP', serif;
+    text-transform: uppercase;
+    margin-top: 60px;
+    list-style: none;
+}
+ 
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: #432;
+}
+.main-nav a:hover {
+    color: #0bd;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+
+}
+.home-content  {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+
+/* 作品写真
+-------------------------------------------*/
+.grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit,minmax(360px,1fr));
+    margin-top: 6%;
+    margin-bottom: 20px;
+}
+
+.works-images {
+    text-align: center;
+    object-fit: scale-down;
+}
+
+
+.works-images p{
+    padding: 30px 0;
+}
+
+
+/*　タイトル文章
+--------------------------------------------*/
+
+.title-text {
+   
+    padding-top: 50px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+    
+}
+
+/*見出し
+--------------------------------*/
+h3 {
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Noto Serif JP', serif;
+    font-size: x-large;
+   margin: 50px 30px 0 50px;
+    padding:50px 30px 10px ; 
+}
+
+/*文章
+---------------------------------*/
+.text {
+  font-family: 'Noto Serif JP', serif;
+}
+.p {
+    font-family: 'Noto Serif JP', serif;  
+}
+/*作者について
+-------------------------------------*/
+
+.author,.theworks {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.author {
+    flex-direction: row-reverse;
+}
+
+
+#about {
+  font-family: 'Noto Serif JP', serif;
+}
+#about p {
+    padding: 0 2%;
+}
+#about h3 {
+    border-bottom: 1px solid black;
+    margin-bottom: 5%;
+}
+
+
+#about img {
+    max-width: 50%;
+    object-fit: cover;
+}
+.award p {
+    margin-left: 50px;
+    padding-left:10px ;
+    padding-top: 5%;
+}
+
+/* CONTACT
+-----------------------------------*/
+#contact {
+    text-align: center;
+    margin: 10% 0;
+    font-family: 'Noto Serif JP', serif;
+}
+#contact p {
+    font-size: 1rem;
+    margin: 30px 20px ;
+}
+/*ボタン
+------------------------------------*/
+.button {
+    font-size: 1rem;
+    background: #432;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+    margin: 20px 0;
+}
+
+.button:hover {
+    background: #0bd;
+}
+
+/*フッター固定のための記述  
+---------------------------------------- */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  footer {
+    margin-top: auto;
+  }
+
+
+
+/*　フッター　
+--------------------------------------------*/
+footer {
+    background: #432;
+    text-align: center;
+    width: 100%;
+    padding: 5%;
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+.footer-nav {
+    list-style: none;
+    margin-top: 15px;
+}
+.footer-nav a {
+    color: #fff;
+    font-size: 0.875rem;
+}
+.footer-nav a:hover {
+    color: #0bd;
+}
+
+/* モバイル版
+---------------------------------------------*/
+@media(max-width: 670px) {
+    .page-title {
+        font-size: 1.7rem;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .main {
+        max-width: 100%;
+    }
+    .img {
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    /*HEADER*/
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+          }
+
+    /*HOME*/
+    .home-content {
+        margin-top: 20%;
+    }
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .top-text wrapper {
+        text-align :left;
+    }
+/*WORKS*/
+#works {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.title-text h2{
+ font-size: 1.3rem;
+ font-weight: bold;
+ margin-bottom: 5%;
+}
+
+.title-text p {
+    text-align: left;
+    padding: 0 10%;
+    margin: 0 auto;
+}
+.works-images {
+    grid-column: auto;
+    grid-row: auto;
+}
+
+
+.wrappar grid {
+    grid-column: auto;
+    grid-row: auto;
+}
+
+/*ABOUT*/   
+#about {
+    align-items: center;
+}
+
+#about img {
+    max-width: 100%;
+    object-fit: cover;
+}
+.author,.theworks {
+ flex-direction: column;
+ align-items: center;
+ text-align: left;
+ margin: 5%;
+} 
+
+.award p{
+    text-align: left;
+    margin: 5%;
+   
+}
+h3 {
+    text-align: center;
+
+ 
+}
+/*フッター*/
+footer {
+    width: 100%;
+}
+
+
+}
