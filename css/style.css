@@ -287,6 +287,10 @@ footer p {
     object-fit: cover;
     
 }
+#about h3 {
+    font-size: small;
+    }
+    
 .author,.theworks {
  flex-direction: column;
  margin: 5%;
